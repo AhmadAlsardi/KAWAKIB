@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>KAWAKIB | Management & Strategic Consulting</title>
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo-link">
+        <img src="LOGO.jpg" alt="KAWAKIB Logo" class="brand-logo">
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-links">
+        <a href="index.html" class="nav-item active" data-i18n="nav-home">Home</a>
+        <a href="about.html" class="nav-item" data-i18n="nav-about">About</a>
+        <a href="services.html" class="nav-item" data-i18n="nav-services">Services</a>
+        <a href="#approach" class="nav-item" data-i18n="nav-approach">Approach</a>
+        <a href="contact.html" class="nav-item" data-i18n="nav-contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Language Toggle Button -->
+        <button class="lang-btn" id="langToggle" aria-label="Toggle Language">
+          <span class="lang-text">عربي</span>
+        </button>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Mobile Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay Navigation -->
+  <div class="mobile-menu-overlay" id="mobileMenu">
+    <div class="mobile-menu-content">
+      <a href="index.html" class="mobile-nav-item active" data-i18n="nav-home">Home</a>
+      <a href="about.html" class="mobile-nav-item" data-i18n="nav-about">About</a>
+      <a href="services.html" class="mobile-nav-item" data-i18n="nav-services">Services</a>
+      <a href="#approach" class="mobile-nav-item" data-i18n="nav-approach">Approach</a>
+      <a href="contact.html" class="mobile-nav-item" data-i18n="nav-contact">Contact</a>
+      
+      <div class="mobile-cta-wrapper">
+        <a href="#contact" class="apple-btn mobile-consultation-btn" data-i18n="btn-consultation">
+          Book a Consultation
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- 1. Hero Section -->
+    <section class="hero-section">
+      <div class="hero-container">
+        
+        <h1 class="hero-title" data-i18n="hero-title">
+          Connect the Planets<br>Discover the Bigger Picture.
+        </h1>
+
+<!-- Planets Container -->
+        <div class="planets-container video-mode" id="planetsGrid">
+          <div class="planet-item" data-color="var(--p-cyan)" style="--color: var(--p-cyan); --i: 0; --delay: 0.1s;">
+            <span class="planet-dot"></span>
+            <span class="planet-label" data-i18n="p-strategy">Strategy</span>
+          </div>
+          <div class="planet-item" data-color="var(--p-blue)" style="--color: var(--p-blue); --i: 1; --delay: 0.2s;">
+            <span class="planet-dot"></span>
+            <span class="planet-label" data-i18n="p-sales">Sales</span>
+          </div>
+          <div class="planet-item" data-color="var(--p-magenta)" style="--color: var(--p-magenta); --i: 2; --delay: 0.3s;">
+            <span class="planet-dot"></span>
+            <span class="planet-label" data-i18n="p-marketing">Marketing</span>
+          </div>
+          <div class="planet-item" data-color="var(--p-orange)" style="--color: var(--p-orange); --i: 3; --delay: 0.4s;">
+            <span class="planet-dot"></span>
+            <span class="planet-label" data-i18n="p-branding">Branding</span>
+          </div>
+          <div class="planet-item" data-color="var(--p-lime)" style="--color: var(--p-lime); --i: 4; --delay: 0.5s;">
+            <span class="planet-dot"></span>
+            <span class="planet-label" data-i18n="p-cx">Customer Experience</span>
+          </div>
+          <div class="planet-item" data-color="var(--p-teal)" style="--color: var(--p-teal); --i: 5; --delay: 0.6s;">
+            <span class="planet-dot"></span>
+            <span class="planet-label" data-i18n="p-product">Product</span>
+          </div>
+          <div class="planet-item" data-color="var(--p-yellow)" style="--color: var(--p-yellow); --i: 6; --delay: 0.7s;">
+            <span class="planet-dot"></span>
+            <span class="planet-label" data-i18n="p-people">People & Culture</span>
+          </div>
+          <div class="planet-item" data-color="var(--p-purple)" style="--color: var(--p-purple); --i: 7; --delay: 0.8s;">
+            <span class="planet-dot"></span>
+            <span class="planet-label" data-i18n="p-ops">Operations</span>
+          </div>
+        </div>
+
+        <div class="cta-wrapper">
+          <a href="#contact" class="apple-btn" data-i18n="btn-consultation">
+            Book a Consultation
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. About Preview Section -->
+    <section class="about-section" id="about">
+      <div class="about-container">
+        <div class="about-text-content">
+          <span class="section-badge" data-i18n="about-badge">About Kawakib</span>
+          <h2 class="section-title" data-i18n="about-title">
+            Understanding your business to discover the bigger picture.
+          </h2>
+          <p class="section-desc" data-i18n="about-desc">
+            Kawakib Business & Strategy Consulting provides professional consulting services tailored for individuals, startups, and small and medium-sized enterprises (SMEs). We help business owners evaluate their current situation, identify operational gaps, and develop practical recommendations that drive performance improvement and confident decision-making.
+          </p>
+          <div class="about-action">
+            <a href="#services" class="text-link" data-i18n="about-link">Explore our services →</a>
+          </div>
+        </div>
+
+        <div class="about-image-content">
+          <div class="image-wrapper">
+            <img src="home.png" alt="Kawakib Strategy Overview" class="about-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Services Overview Section -->
+    <section class="services-section" id="services">
+      <div class="services-container">
+        <div class="section-header-center">
+          <span class="section-badge" data-i18n="services-badge">Our Services</span>
+          <h2 class="section-title" data-i18n="services-heading">Tailored consulting solutions for your needs.</h2>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1: SMEs -->
+          <div class="service-card">
+            <div class="service-icon-box" style="background: rgba(0, 196, 204, 0.1); color: var(--p-cyan);">
+              <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+            </div>
+            <h3 class="service-title" data-i18n="s1-title">Small & Medium Enterprises (SMEs)</h3>
+            <p class="service-desc" data-i18n="s1-desc">Comprehensive business assessment across eight key areas to identify gaps, boost performance, and optimize daily operations.</p>
+            <a href="#contact" class="service-link" data-i18n="learn-more">Learn more →</a>
+          </div>
+
+          <!-- Service 2: Specialized -->
+          <div class="service-card">
+            <div class="service-icon-box" style="background: rgba(0, 122, 255, 0.1); color: var(--p-blue);">
+              <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+            </div>
+            <h3 class="service-title" data-i18n="s2-title">Specialized Consulting</h3>
+            <p class="service-desc" data-i18n="s2-desc">Targeted solutions focusing on Workplace Culture (People & Culture) and Customer Experience (CX) journey enhancements.</p>
+            <a href="#contact" class="service-link" data-i18n="learn-more">Learn more →</a>
+          </div>
+
+          <!-- Service 3: Individuals -->
+          <div class="service-card">
+            <div class="service-icon-box" style="background: rgba(255, 122, 0, 0.1); color: var(--p-orange);">
+              <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+            </div>
+            <h3 class="service-title" data-i18n="s3-title">Individuals & Idea Owners</h3>
+            <p class="service-desc" data-i18n="s3-desc">Initial Business Feasibility Studies and one-on-one consultation sessions to evaluate new business ideas and validate market viability.</p>
+            <a href="#contact" class="service-link" data-i18n="learn-more">Learn more →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Our Approach Section -->
+    <section class="approach-section" id="approach">
+      <div class="approach-container">
+        <div class="section-header-center">
+          <span class="section-badge" data-i18n="approach-badge">Our Approach</span>
+          <h2 class="section-title" data-i18n="approach-heading">How we drive your success step by step.</h2>
+        </div>
+
+        <div class="approach-steps">
+          <div class="step-card">
+            <span class="step-num">01</span>
+            <h4 data-i18n="step1-title">Understand</h4>
+            <p data-i18n="step1-desc">We listen closely to understand your core vision and business context.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-num">02</span>
+            <h4 data-i18n="step2-title">Evaluate</h4>
+            <p data-i18n="step2-desc">We analyze different aspects of your business systematically.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-num">03</span>
+            <h4 data-i18n="step3-title">Identify Gaps</h4>
+            <p data-i18n="step3-desc">We pinpoint exact challenges and areas requiring immediate attention.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-num">04</span>
+            <h4 data-i18n="step4-title">Recommend</h4>
+            <p data-i18n="step4-desc">We provide practical recommendations aligned with your goals.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-num">05</span>
+            <h4 data-i18n="step5-title">Direction</h4>
+            <p data-i18n="step5-desc">We define a clear, actionable roadmap for your next growth phase.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Contact / CTA Section -->
+    <section class="contact-section" id="contact">
+      <div class="contact-container">
+        <div class="contact-box">
+          <h2 class="section-title" data-i18n="contact-title">Let's start your journey together.</h2>
+          <p class="section-desc" data-i18n="contact-desc">Do you have a business idea, or are you looking to develop your existing business? Contact Kawakib Business & Strategy Consulting today.</p>
+          <div class="contact-actions">
+            <a href="mailto:info@kawakib.com" class="apple-btn" data-i18n="btn-email">Email Us</a>
+            <a href="https://wa.me/" target="_blank" class="secondary-btn" data-i18n="btn-whatsapp">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p data-i18n="footer-text">© 2026 KAWAKIB Business & Strategy Consulting. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Script (اللغات + الكواكب + القائمة) -->
+<script>
+    // 1. إيقاف موشن الكواكب بعد التحميل
+    window.addEventListener('DOMContentLoaded', () => {
+      setTimeout(() => {
+        const planetsContainer = document.getElementById('planetsGrid');
+        if (planetsContainer) {
+          planetsContainer.classList.remove('video-mode');
+        }
+      }, 2500);
+    });
+
+    // 2. التحكم بقائمة الموبايل Hamburger Menu
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileLinks = document.querySelectorAll('.mobile-nav-item, .mobile-consultation-btn');
+
+    function toggleMenu() {
+      hamburgerBtn.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+      document.body.classList.toggle('no-scroll');
+    }
+
+    hamburgerBtn.addEventListener('click', toggleMenu);
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (mobileMenu.classList.contains('active')) {
+          toggleMenu();
+        }
+      });
+    });
+
+    // 3. تفاعل الكواكب وتغيير الثيم بالكامل
+    const planetItems = document.querySelectorAll('.planet-item');
+
+    planetItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const planetColor = item.getAttribute('data-color');
+        const isAlreadyActive = item.classList.contains('planet-active');
+
+        planetItems.forEach(p => p.classList.remove('planet-active'));
+
+        if (!isAlreadyActive) {
+          item.classList.add('planet-active');
+          
+          const tempElement = document.createElement('div');
+          tempElement.style.color = planetColor;
+          document.body.appendChild(tempElement);
+          const computedColor = window.getComputedStyle(tempElement).color;
+          document.body.removeChild(tempElement);
+
+          document.body.style.backgroundColor = computedColor.replace('rgb(', 'rgba(').replace(')', ', 0.43)');
+        } else {
+          document.body.style.backgroundColor = '#ffffff';
+        }
+      });
+    });
+
+    // 4. نظام إدارة اللغات (عربي / إنجليزي)
+    const langToggle = document.getElementById('langToggle');
+    const htmlElem = document.documentElement;
+    let currentLang = 'en';
+
+    const translations = {
+      en: {
+        'nav-home': 'Home',
+        'nav-about': 'About',
+        'nav-services': 'Services',
+        'nav-approach': 'Approach',
+        'nav-contact': 'Contact',
+        'hero-title': 'Connect the Planets.<br>Discover the Bigger Picture.',
+        'btn-consultation': 'Book a Consultation',
+        'p-strategy': 'Strategy',
+        'p-sales': 'Sales',
+        'p-marketing': 'Marketing',
+        'p-branding': 'Branding',
+        'p-cx': 'Customer Experience',
+        'p-product': 'Product',
+        'p-people': 'People & Culture',
+        'p-ops': 'Operations',
+        'about-badge': 'About Kawakib',
+        'about-title': 'Understanding your business to discover the bigger picture.',
+        'about-desc': 'Kawakib Business & Strategy Consulting provides professional consulting services tailored for individuals, startups, and small and medium-sized enterprises (SMEs). We help business owners evaluate their current situation, identify operational gaps, and develop practical recommendations that drive performance improvement and confident decision-making.',
+        'about-link': 'Explore our services →',
+        'services-badge': 'Our Services',
+        'services-heading': 'Tailored consulting solutions for your needs.',
+        's1-title': 'Small & Medium Enterprises (SMEs)',
+        's1-desc': 'Comprehensive business assessment across eight key areas to identify gaps, boost performance, and optimize daily operations.',
+        's2-title': 'Specialized Consulting',
+        's2-desc': 'Targeted solutions focusing on Workplace Culture (People & Culture) and Customer Experience (CX) journey enhancements.',
+        's3-title': 'Individuals & Idea Owners',
+        's3-desc': 'Initial Business Feasibility Studies and one-on-one consultation sessions to evaluate new business ideas and validate market viability.',
+        'learn-more': 'Learn more →',
+        'approach-badge': 'Our Approach',
+        'approach-heading': 'How we drive your success step by step.',
+        'step1-title': 'Understand',
+        'step1-desc': 'We listen closely to understand your core vision and business context.',
+        'step2-title': 'Evaluate',
+        'step2-desc': 'We analyze different aspects of your business systematically.',
+        'step3-title': 'Identify Gaps',
+        'step3-desc': 'We pinpoint exact challenges and areas requiring immediate attention.',
+        'step4-title': 'Recommend',
+        'step4-desc': 'We provide practical recommendations aligned with your goals.',
+        'step5-title': 'Direction',
+        'step5-desc': 'We define a clear, actionable roadmap for your next growth phase.',
+        'contact-title': "Let's start your journey together.",
+        'contact-desc': 'Do you have a business idea, or are you looking to develop your existing business? Contact Kawakib Business & Strategy Consulting today.',
+        'btn-email': 'Email Us',
+        'btn-whatsapp': 'WhatsApp',
+        'footer-text': '© 2026 KAWAKIB Business & Strategy Consulting. All rights reserved.',
+        'lang-text': 'عربي'
+      },
+      ar: {
+        'nav-home': 'الرئيسية',
+        'nav-about': 'من نحن',
+        'nav-services': 'خدماتنا',
+        'nav-approach': 'منهجيتنا',
+        'nav-contact': 'تواصل معنا',
+        'btn-consultation': 'احجز استشارة',
+        'p-strategy': 'الاستراتيجية',
+        'p-sales': 'المبيعات',
+        'p-marketing': 'التسويق',
+        'p-branding': 'الهوية التجارية',
+        'p-cx': 'تجربة العملاء',
+        'p-product': 'المنتج',
+        'p-people': 'الأفراد والثقافة',
+        'p-ops': 'العمليات',
+        'about-badge': 'عن كواكب',
+        'about-title': 'نفهم عملك لنكتشف معك الصورة الأكبر.',
+        'about-desc': 'تقدم شركة كواكب للاستشارات الإدارية والاستراتيجية خدمات استشارية متخصصة للأفراد، الشركات الناشئة، والصغير والمتوسطة. نساعد أصحاب الأعمال على تقييم وضعهم الحالي، وتحديد الفجوات التشغيلية، وتقديم توصيات عمليّة تدعم تحسين الأداء واتخاذ القرار السليم.',
+        'about-link': 'استكشف خدماتنا ←',
+        'services-badge': 'خدماتنا',
+        'services-heading': 'حلول استشارية مصممة خصيصاً لتناسب احتياجاتك.',
+        's1-title': 'الشركات الصغيرة والمتوسطة',
+        's1-desc': 'تقييم شامل للأداء عبر ثماني مجالات رئيسية لتحديد الفجوات وتحسين الكفاءة التشغيلية وعمليات النمو.',
+        's2-title': 'خدمات استشارية تخصصية',
+        's2-desc': 'حلول مركزة تشمل تطوير بيئة العمل وثقافة الشركة وتحسين رحلة وتجربة العملاء (CX).',
+        's3-title': 'الأفراد وأصحاب الأفكار',
+        's3-desc': 'دراسات جدوى مبسطة وجلسات استشارية فردية لتقييم الأفكار التجارية ومعرفة مدى ملاءمتها للسوق.',
+        'learn-more': 'اعرف المزيد ←',
+        'approach-badge': 'منهجية العمل',
+        'approach-heading': 'كيف نرافقك خطوة بخطوة نحو النجاح.',
+        'step1-title': 'الفهم',
+        'step1-desc': 'نستمع بعناية لفهم رؤيتك وطبيعة عملك بشكل كامل.',
+        'step2-title': 'التقييم',
+        'step2-desc': 'نقوم بتقييم مختلف جوانب العمل بشكل منهجي ومنظم.',
+        'step3-title': 'تحديد الفجوات',
+        'step3-desc': 'نكتشف التحديات والنقاط التي تحتاج إلى تطوير وتحسين.',
+        'step4-title': 'التوصيات',
+        'step4-desc': 'نقدم توصيات عملية وقابلة للتطبيق تدعم أهدافك.',
+        'step5-title': 'تحديد الوجهة',
+        'step5-desc': 'نرسم لك خطوة واضحة ومدروسة لخطواتك القادمة.',
+        'contact-title': 'لنبدأ رحلتك معنا.',
+        'contact-desc': 'هل لديك فكرة مشروع، أو تتطلع لتطوير عملك القائم؟ تواصل مع شركة كواكب للاستشارات الإدارية والاستراتيجية.',
+        'btn-email': 'راسلنا بالإيميل',
+        'btn-whatsapp': 'واتساب',
+        'footer-text': '© 2026 كواكب للاستشارات الإدارية والاستراتيجية. جميع الحقوق محفوظة.',
+        'lang-text': 'English'
+      }
+    };
+
+    langToggle.addEventListener('click', () => {
+      currentLang = currentLang === 'en' ? 'ar' : 'en';
+      htmlElem.setAttribute('lang', currentLang);
+      htmlElem.setAttribute('dir', currentLang === 'ar' ? 'rtl' : 'ltr');
+
+      document.querySelectorAll('[data-i18n]').forEach(elem => {
+        const key = elem.getAttribute('data-i18n');
+        if (translations[currentLang][key]) {
+          elem.innerHTML = translations[currentLang][key];
+        }
+      });
+      document.querySelector('.lang-text').textContent = translations[currentLang]['lang-text'];
+    });
+  </script>
+  </body>
+</html>

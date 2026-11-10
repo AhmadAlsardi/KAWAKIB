@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Contact Us | KAWAKIB Consulting</title>
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo-link">
+        <img src="LOGO.jpg" alt="KAWAKIB Logo" class="brand-logo">
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html" class="nav-item" data-i18n="nav-home">Home</a>
+        <a href="about.html" class="nav-item" data-i18n="nav-about">About</a>
+        <a href="services.html" class="nav-item" data-i18n="nav-services">Services</a>
+        <a href="index.html#approach" class="nav-item" data-i18n="nav-approach">Approach</a>
+        <a href="contact.html" class="nav-item active" data-i18n="nav-contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="lang-btn" id="langToggle" aria-label="Toggle Language">
+          <span class="lang-text">عربي</span>
+        </button>
+
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Mobile Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay Navigation -->
+  <div class="mobile-menu-overlay" id="mobileMenu">
+    <div class="mobile-menu-content">
+      <a href="index.html" class="mobile-nav-item" data-i18n="nav-home">Home</a>
+      <a href="about.html" class="mobile-nav-item" data-i18n="nav-about">About</a>
+      <a href="services.html" class="mobile-nav-item" data-i18n="nav-services">Services</a>
+      <a href="index.html#approach" class="mobile-nav-item" data-i18n="nav-approach">Approach</a>
+      <a href="contact.html" class="mobile-nav-item active" data-i18n="nav-contact">Contact</a>
+      
+      <div class="mobile-cta-wrapper">
+        <a href="contact.html" class="apple-btn mobile-consultation-btn" data-i18n="btn-consultation">
+          Book a Consultation
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="page-hero-container">
+        <span class="section-badge" data-i18n="contact-badge">Contact Us</span>
+        <h1 class="hero-title" data-i18n="contact-main-title">
+          Let's discuss your next business milestone.
+        </h1>
+        <p class="hero-subtitle" data-i18n="contact-main-subtitle">
+          Do you have a business idea, or are you looking to develop your existing business? Reach out to Kawakib Consulting today.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Content Section -->
+    <section class="contact-page-section">
+      <div class="contact-page-container">
+        
+        <!-- Direct Info Cards -->
+        <div class="contact-info-cards">
+          <a href="mailto:info@kawakib.com" class="info-card">
+            <div class="info-icon" style="background: rgba(0, 122, 255, 0.1); color: var(--p-blue);">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+            <div>
+              <h3 data-i18n="info-email-title">Email Us</h3>
+              <p>info@kawakib.com</p>
+            </div>
+          </a>
+
+          <a href="https://wa.me/" target="_blank" class="info-card">
+            <div class="info-icon" style="background: rgba(142, 198, 63, 0.1); color: var(--p-lime);">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+            </div>
+            <div>
+              <h3 data-i18n="info-wa-title">WhatsApp</h3>
+              <p data-i18n="info-wa-desc">Direct messaging & consultations</p>
+            </div>
+          </a>
+
+          <div class="info-card">
+            <div class="info-icon" style="background: rgba(216, 27, 96, 0.1); color: var(--p-magenta);">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </div>
+            <div>
+              <h3 data-i18n="info-social-title">Social Media</h3>
+              <p>@kawakib.consulting</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form Box -->
+        <div class="contact-form-wrapper">
+          <form class="consultation-form" onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent successfully.');">
+            <h3 data-i18n="form-heading">Send us a message</h3>
+            
+            <div class="form-group">
+              <label for="name" data-i18n="form-name">Full Name</label>
+              <input type="text" id="name" required placeholder="Ahmad Alsardi">
+            </div>
+
+            <div class="form-group">
+              <label for="email" data-i18n="form-email">Email Address</label>
+              <input type="email" id="email" required placeholder="name@example.com">
+            </div>
+
+            <div class="form-group">
+              <label for="message" data-i18n="form-msg">Your Inquiry / Business Idea</label>
+              <textarea id="message" rows="4" required placeholder="Tell us about your business goals or idea..."></textarea>
+            </div>
+
+            <button type="submit" class="apple-btn form-submit-btn" data-i18n="form-btn">Send Message</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p data-i18n="footer-text">© 2026 KAWAKIB Business & Strategy Consulting. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileLinks = document.querySelectorAll('.mobile-nav-item, .mobile-consultation-btn');
+
+    function toggleMenu() {
+      hamburgerBtn.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+      document.body.classList.toggle('no-scroll');
+    }
+
+    hamburgerBtn.addEventListener('click', toggleMenu);
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (mobileMenu.classList.contains('active')) {
+          toggleMenu();
+        }
+      });
+    });
+
+    const langToggle = document.getElementById('langToggle');
+    const htmlElem = document.documentElement;
+    let currentLang = 'en';
+
+    const translations = {
+      en: {
+        'nav-home': 'Home',
+        'nav-about': 'About',
+        'nav-services': 'Services',
+        'nav-approach': 'Approach',
+        'nav-contact': 'Contact',
+        'btn-consultation': 'Book a Consultation',
+        'contact-badge': 'Contact Us',
+        'contact-main-title': "Let's discuss your next business milestone.",
+        'contact-main-subtitle': 'Do you have a business idea, or are you looking to develop your existing business? Reach out to Kawakib Consulting today.',
+        'info-email-title': 'Email Us',
+        'info-wa-title': 'WhatsApp',
+        'info-wa-desc': 'Direct messaging & consultations',
+        'info-social-title': 'Social Media',
+        'form-heading': 'Send us a message',
+        'form-name': 'Full Name',
+        'form-email': 'Email Address',
+        'form-msg': 'Your Inquiry / Business Idea',
+        'form-btn': 'Send Message',
+        'footer-text': '© 2026 KAWAKIB Business & Strategy Consulting. All rights reserved.',
+        'lang-text': 'عربي'
+      },
+      ar: {
+        'nav-home': 'الرئيسية',
+        'nav-about': 'من نحن',
+        'nav-services': 'خدماتنا',
+        'nav-approach': 'منهجيتنا',
+        'nav-contact': 'تواصل معنا',
+        'btn-consultation': 'احجز استشارة',
+        'contact-badge': 'تواصل معنا',
+        'contact-main-title': 'لنناقش خطوتك التجارية القادمة.',
+        'contact-main-subtitle': 'هل لديك فكرة مشروع، أو تتطلع لتطوير عملك القائم؟ تواصل مع شركة كواكب للاستشارات اليوم.',
+        'info-email-title': 'البريد الإلكتروني',
+        'info-wa-title': 'واتساب',
+        'info-wa-desc': 'المراسلة المباشرة والاستشارات',
+        'info-social-title': 'شبكات التواصل',
+        'form-heading': 'أرسل لنا رسالة',
+        'form-name': 'الاسم الكامل',
+        'form-email': 'البريد الإلكتروني',
+        'form-msg': 'استفسارك أو فكرة مشروعك',
+        'form-btn': 'إرسال الرسالة',
+        'footer-text': '© 2026 كواكب للاستشارات الإدارية والاستراتيجية. جميع الحقوق محفوظة.',
+        'lang-text': 'English'
+      }
+    };
+
+    langToggle.addEventListener('click', () => {
+      currentLang = currentLang === 'en' ? 'ar' : 'en';
+      htmlElem.setAttribute('lang', currentLang);
+      htmlElem.setAttribute('dir', currentLang === 'ar' ? 'rtl' : 'ltr');
+      
+      document.querySelectorAll('[data-i18n]').forEach(elem => {
+        const key = elem.getAttribute('data-i18n');
+        if (translations[currentLang][key]) {
+          elem.innerHTML = translations[currentLang][key];
+        }
+      });
+
+      document.querySelector('.lang-text').textContent = translations[currentLang]['lang-text'];
+    });
+  </script>
+</body>
+</html>

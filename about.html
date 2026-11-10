@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>About Us | KAWAKIB Consulting</title>
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo-link">
+        <img src="LOGO.jpg" alt="KAWAKIB Logo" class="brand-logo">
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-links">
+        <a href="index.html" class="nav-item" data-i18n="nav-home">Home</a>
+        <a href="about.html" class="nav-item active" data-i18n="nav-about">About</a>
+        <a href="services.html" class="nav-item" data-i18n="nav-services">Services</a>
+        <a href="index.html#approach" class="nav-item" data-i18n="nav-approach">Approach</a>
+        <a href="contact.html" class="nav-item" data-i18n="nav-contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Language Toggle Button -->
+        <button class="lang-btn" id="langToggle" aria-label="Toggle Language">
+          <span class="lang-text">عربي</span>
+        </button>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Mobile Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay Navigation -->
+  <div class="mobile-menu-overlay" id="mobileMenu">
+    <div class="mobile-menu-content">
+      <a href="index.html" class="mobile-nav-item" data-i18n="nav-home">Home</a>
+      <a href="about.html" class="mobile-nav-item active" data-i18n="nav-about">About</a>
+      <a href="services.html" class="mobile-nav-item" data-i18n="nav-services">Services</a>
+      <a href="index.html#approach" class="mobile-nav-item" data-i18n="nav-approach">Approach</a>
+      <a href="contact.html" class="mobile-nav-item" data-i18n="nav-contact">Contact</a>
+      
+      <div class="mobile-cta-wrapper">
+        <a href="contact.html" class="apple-btn mobile-consultation-btn" data-i18n="btn-consultation">
+          Book a Consultation
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- About Page Header Hero -->
+    <section class="page-hero">
+      <div class="page-hero-container">
+        <span class="section-badge" data-i18n="about-badge">About Kawakib</span>
+        <h1 class="hero-title" data-i18n="about-main-title">
+          Discover the Bigger Picture.
+        </h1>
+        <p class="hero-subtitle" data-i18n="about-main-subtitle">
+          We focus on understanding and evaluating different aspects of a business to support better decision-making.
+        </p>
+      </div>
+    </section>
+
+    <!-- Detailed About Content Section -->
+    <section class="about-details-section">
+      <div class="about-details-container">
+        
+        <div class="detail-card">
+          <h3 data-i18n="card1-title">Individual Approach</h3>
+          <p data-i18n="card1-desc">We approach each business individually, taking into consideration its unique nature and specific needs to identify the precise areas that require attention and development.</p>
+        </div>
+
+        <div class="detail-card">
+          <h3 data-i18n="card2-title">Strategic Clarity</h3>
+          <p data-i18n="card2-desc">Helping business owners understand their current business situation, identify operational gaps, and develop practical recommendations that drive performance.</p>
+        </div>
+
+        <div class="detail-card">
+          <h3 data-i18n="card3-title">Comprehensive Vision</h3>
+          <p data-i18n="card3-desc">Connecting all business planets together—from strategy and sales to operations and culture—to reveal the comprehensive picture of your enterprise.</p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p data-i18n="footer-text">© 2026 KAWAKIB Business & Strategy Consulting. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Script (اللغات + القائمة) -->
+  <script>
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileLinks = document.querySelectorAll('.mobile-nav-item, .mobile-consultation-btn');
+
+    function toggleMenu() {
+      hamburgerBtn.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+      document.body.classList.toggle('no-scroll');
+    }
+
+    hamburgerBtn.addEventListener('click', toggleMenu);
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (mobileMenu.classList.contains('active')) {
+          toggleMenu();
+        }
+      });
+    });
+
+    const langToggle = document.getElementById('langToggle');
+    const htmlElem = document.documentElement;
+    let currentLang = 'en';
+
+    const translations = {
+      en: {
+        'nav-home': 'Home',
+        'nav-about': 'About',
+        'nav-services': 'Services',
+        'nav-approach': 'Approach',
+        'nav-contact': 'Contact',
+        'btn-consultation': 'Book a Consultation',
+        'about-badge': 'About Kawakib',
+        'about-main-title': 'Discover the Bigger Picture.',
+        'about-main-subtitle': 'We focus on understanding and evaluating different aspects of a business to support better decision-making.',
+        'card1-title': 'Individual Approach',
+        'card1-desc': 'We approach each business individually, taking into consideration its unique nature and specific needs to identify the precise areas that require attention and development.',
+        'card2-title': 'Strategic Clarity',
+        'card2-desc': 'Helping business owners understand their current business situation, identify operational gaps, and develop practical recommendations that drive performance.',
+        'card3-title': 'Comprehensive Vision',
+        'card3-desc': 'Connecting all business planets together—from strategy and sales to operations and culture—to reveal the comprehensive picture of your enterprise.',
+        'footer-text': '© 2026 KAWAKIB Business & Strategy Consulting. All rights reserved.',
+        'lang-text': 'عربي'
+      },
+      ar: {
+        'nav-home': 'الرئيسية',
+        'nav-about': 'من نحن',
+        'nav-services': 'خدماتنا',
+        'nav-approach': 'منهجيتنا',
+        'nav-contact': 'تواصل معنا',
+        'btn-consultation': 'احجز استشارة',
+        'about-badge': 'عن كواكب',
+        'about-main-title': 'اكتشف الصورة الأكبر.',
+        'about-main-subtitle': 'نركز على فهم وتقييم مختلف جوانب العمل لدعم عملية اتخاذ القرار بأفضل صورة ممكنة.',
+        'card1-title': 'نهج مخصص لكل عميل',
+        'card1-desc': 'نتعامل مع كل مشروع بشكل فردي ومستقل، مع أخذ طبيعته واحتياجاته الخاصة بعين الاعتبار لتحديد المجالات التي تتطلب التطوير والاهتمام.',
+        'card2-title': 'وضوح استراتيجي',
+        'card2-desc': 'نساعد أصحاب الأعمال على فهم وضعهم الحالي، وتحديد الفجوات التشغيلية، وابتكار توصيات عملية تعزز الأداء الكلي.',
+        'card3-title': 'رؤية شاملة',
+        'card3-desc': 'نربط جميع جوانب العمل ببعضها البعض — من الاستراتيجية والمبيعات إلى العمليات والثقافة — لنكشف لك الصورة الأكبر لشركتك.',
+        'footer-text': '© 2026 كواكب للاستشارات الإدارية والاستراتيجية. جميع الحقوق محفوظة.',
+        'lang-text': 'English'
+      }
+    };
+
+    langToggle.addEventListener('click', () => {
+      currentLang = currentLang === 'en' ? 'ar' : 'en';
+      htmlElem.setAttribute('lang', currentLang);
+      htmlElem.setAttribute('dir', currentLang === 'ar' ? 'rtl' : 'ltr');
+      
+      document.querySelectorAll('[data-i18n]').forEach(elem => {
+        const key = elem.getAttribute('data-i18n');
+        if (translations[currentLang][key]) {
+          elem.innerHTML = translations[currentLang][key];
+        }
+      });
+
+      document.querySelector('.lang-text').textContent = translations[currentLang]['lang-text'];
+    });
+  </script>
+</body>
+</html>
